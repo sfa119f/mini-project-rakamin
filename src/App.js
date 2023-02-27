@@ -8,7 +8,7 @@ import About from "./views/About";
 
 function App() {
   return (
-    <div>
+    <div className="relative min-h-screen pb-16">
       <Router>
         <Header />
         <div className="py-5 px-6 lg:px-12">
