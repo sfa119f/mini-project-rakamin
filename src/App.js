@@ -1,19 +1,23 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./component/Header";
+import Footer from "./component/Footer";
 import Home from "./views/Home";
 import About from "./views/About";
-import Header from "./component/Header";
 
 function App() {
   return (
     <div>
       <Router>
         <Header />
-        <Routes>
-          <Route exact path={"/"} element={<Home />} />
-          <Route exact path={"/about"} element={<About />} />
-        </Routes>
+        <div className="py-5 px-6 lg:px-12">
+          <Routes>
+            <Route exact path={"/"} element={<Home />} />
+            <Route exact path={"/about"} element={<About />} />
+          </Routes>
+        </div>
+        <Footer />
       </Router>
     </div>
     // <div className="App">
