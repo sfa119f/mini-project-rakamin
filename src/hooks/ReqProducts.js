@@ -27,7 +27,7 @@ export function GetListProducts(url) {
         setRequest({
           data: [],
           loading: false,
-          error: e.response ? e.response.data.message : e,
+          error: e.message ? e.message : e,
         });
       });
   }, [url]);

@@ -33,7 +33,7 @@ function App() {
             setDarkMode(val);
           }}
         />
-        <div className="py-5 px-6 lg:px-12 dark:bg-navy-dark dark:text-white">
+        <div className="py-5 px-6 lg:px-12 dark:bg-navy-dark dark:text-white min-h-[calc(100vh-9rem)]">
           <Routes>
             <Route exact path={"/"} element={<Home />} />
             <Route exact path={"/product/:id"} element={<Product />} />

@@ -28,6 +28,12 @@ function Home() {
         {products.error}
       </div>
     );
+  } else if (!products.data.length) {
+    content = (
+      <div className="text-xl font-bold text-red-400 flex justify-center items-center h-64">
+        Sorry, no data available.
+      </div>
+    );
   } else {
     content = products.data.map(
       (el, idx) =>
@@ -64,13 +70,9 @@ function Home() {
           className="cursor-pointer mt-2 py-2 px-3 hover:bg-gray-300/50"
           onClick={() => page > 1 && setPage(page - 1)}
         />
-
-        {Math.ceil(products.data.length / numData) > 1 && (
-          <div className="py-2">
-            Page {page} / {Math.ceil(products.data.length / numData)}
-          </div>
-        )}
-
+        <div className="py-2">
+          Page {page} / {Math.ceil(products.data.length / numData)}
+        </div>
         <FontAwesomeIcon
           icon={faChevronRight}
           className="cursor-pointer mt-2 py-2 px-3 hover:bg-gray-300/50"
