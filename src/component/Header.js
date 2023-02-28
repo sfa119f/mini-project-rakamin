@@ -1,3 +1,4 @@
+import logo from "../img/logoSFA.png";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +11,10 @@ function Header(props) {
 
   return (
     <nav className="dark:text-white flex justify-between items-center bg-slate-400 dark:bg-navy-light py-5 px-6 lg:px-12">
-      <div className="text-2xl font-bold">SFA App</div>
+      <div className="flex gap-3">
+        <img src={logo} alt="sfa logo" className="h-8 w-8 bg-navy-light" />
+        <div className="text-2xl font-bold truncate">SFA App</div>
+      </div>
       <div className="text-xl hidden sm:flex gap-3 justify-center">
         <Link className="py-1 px-3 rounded hover:bg-gray-300/50" to={"/"}>
           Home

@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "SFA App",
+  "name": "SFA App for Mini Project Rekamin",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,6 +16,11 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "logoSFA.png",
+      "type": "image/png",
+      "sizes": "200x200"
     }
   ],
   "start_url": ".",
