@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ProductCard(props) {
   return (
-    <div className="border-2 border-black/50 rounded-lg mb-6 overflow-hidden bg-slate-100">
+    <div className="border-2 border-black/50 rounded-lg mb-6 overflow-hidden bg-slate-100 dark:bg-navy-light">
       <Link to={`/product/${props.product.id}`}>
         <div
           style={{
