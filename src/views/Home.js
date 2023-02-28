@@ -22,11 +22,11 @@ function Home() {
     );
   } else {
     content = products.data.map((el) => (
-      <div key={el.id} className="flex-no-shrink w-full sm:w-1/4 sm:px-6">
+      <div key={el.id} className="flex-no-shrink w-full sm:w-1/4 sm:px-3">
         <ProductCard product={el} />
       </div>
     ));
-    content = <div className="sm:flex flex-wrap sm:-mx-6">{content}</div>;
+    content = <div className="sm:flex flex-wrap sm:-mx-3">{content}</div>;
   }
 
   return (
